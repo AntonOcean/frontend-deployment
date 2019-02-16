@@ -1,0 +1,157 @@
+body, html {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+}
+
+.profile {
+    border-radius: 5px;
+    width: 90%;
+    max-width: 500px;
+    border: 2px solid #DFDFDF;
+
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile__head {
+    display: flex;
+
+    flex-grow: 1;
+    border-bottom: 2px solid #DFDFDF;
+    padding-bottom: 3vh;
+    padding-top: 3vh;
+    padding-left: 15px;
+}
+
+.profile__head h1 {
+    margin: auto 0;
+    font-size: 1.8rem;
+}
+
+.profile__body {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: "subname name" "nickname ." "birthday ." "sex ." "email phone";
+    grid-gap: 10px;
+
+    font-size: calc(.2vw + 1rem);
+
+    flex-grow: 5;
+}
+
+.profile__body__subname {
+    grid-area: subname;
+}
+
+.profile__body__name {
+    grid-area: name;
+}
+
+.profile__body__nickname {
+    grid-area: nickname;
+}
+
+.profile__body__birthday {
+    grid-area: birthday;
+}
+
+.profile__body__sex {
+    grid-area: sex;
+}
+
+.profile__body__email {
+    grid-area: email;
+}
+
+.profile__body__phone {
+    grid-area: phone;
+}
+
+.profile__body__item {
+    padding-left: 15px;
+}
+
+.profile__body__title {
+    font-weight: bold;
+}
+
+.profile__footer {
+    border-top: 2px solid #DFDFDF;
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 3vh 3vh 3vh 0;
+}
+
+
+.profile__footer .btn {
+    min-width: 180px;
+    border-radius: 8px;
+    height: 6vh;
+    margin: 0 15px;
+    font-weight: bold;
+    flex-grow: 1;
+
+    font-size: calc(.3vw + 1rem);
+
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+
+}
+
+.profile__footer .btn_change {
+    background-color: #FC2C54;
+    border-color: #DD284B;
+    color: #FFFFFF;
+}
+
+.profile__footer .btn_delete {
+    background-color: #F7F7F7;
+    border-color: #E8E8E8;
+    color: #A0A0A0;
+    margin-right: 0;
+}
+
+.btn__title {
+    margin-left: 5px;
+}
+
+
+@media all and (max-width: 575px) {
+    .profile__body {
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(7, 1fr);
+        grid-template-areas: "subname" "name" "nickname" "birthday" "sex" "email" "phone";
+        grid-gap: 10px;
+
+        flex-grow: 5;
+    }
+
+    .profile__footer .btn {
+        min-width: 160px;
+        border-radius: 8px;
+        height: 6vh;
+
+        font-weight: bold;
+        flex-grow: 1;
+
+        margin: 10px 0 10px 15px;
+    }
+}
