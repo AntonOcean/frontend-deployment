@@ -1,5 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900');
+
 body, html {
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+}
+
+button:active, button:focus {
+    outline: none;
+}
+button::-moz-focus-inner {
+    border: 0;
 }
 
 .container {
@@ -103,7 +112,6 @@ body, html {
     margin: 0 15px;
     font-weight: bold;
     flex-grow: 1;
-
     font-size: calc(.3vw + 1rem);
 
     display: flex;
@@ -126,9 +134,21 @@ body, html {
 }
 
 .btn__title {
+    display: block;
     margin-left: 5px;
 }
 
+.btn {
+    cursor: pointer;
+}
+
+.profile__body__description {
+    display: block;
+}
+
+.profile__body__title {
+    display: block;
+}
 
 @media all and (max-width: 575px) {
     .profile__body {
