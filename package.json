@@ -4,7 +4,7 @@
   "description": "Homework",
   "main": "index.js",
   "scripts": {
-    "start": "node start",
+    "start": "cd ./server && node index",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
