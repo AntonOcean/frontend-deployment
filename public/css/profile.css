@@ -149,6 +149,7 @@ icon {
     display: flex;
     cursor: pointer;
     max-height: 70px;
+    min-height: 40px;
 }
 
 .profile__body__description {
@@ -160,6 +161,23 @@ icon {
 }
 
 @media all and (max-width: 575px) {
+    body, html {
+        margin: 0;
+        padding: 0;
+    }
+
+    .profile {
+        border-radius: 5px;
+        width: 100%;
+        max-width: 500px;
+        border: 1px solid #DFDFDF;
+
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+
     .profile__body {
         padding-top: 10px;
         padding-bottom: 10px;
