@@ -11,6 +11,11 @@ button::-moz-focus-inner {
     border: 0;
 }
 
+icon {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
 .container {
     display: flex;
 }
@@ -134,12 +139,16 @@ button::-moz-focus-inner {
 }
 
 .btn__title {
+    margin-top: auto;
+    margin-bottom: auto;
     display: block;
     margin-left: 5px;
 }
 
 .btn {
+    display: flex;
     cursor: pointer;
+    max-height: 70px;
 }
 
 .profile__body__description {
