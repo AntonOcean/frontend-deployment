@@ -17,17 +17,9 @@ const form = document.forms.login;
 function cancelError(context) {
     let currentClasses = context.parentNode.className.split(" ");
 
-    // if ()  Если есть класс ошибки, то убираем сообщение
-    // let errorMessages = document.getElementsByClassName('error-message');
-    //
-    // if (errorMessages.length) {
-    //     [].forEach.call(errorMessages, (elem) => {
-    //         elem.remove();
-    //     });
-    // }
     let errorMessage = context.parentNode.nextSibling;
 
-    if (errorMessage) {
+    if (errorMessage && errorMessage.nodeName !== "#text" && errorMessage.className.split(" ").includes("error-message")) {
         errorMessage.remove();
     }
 
