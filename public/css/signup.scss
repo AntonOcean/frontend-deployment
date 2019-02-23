@@ -13,18 +13,6 @@ html, body {
   padding: 0;
   font-family: 'Roboto', sans-serif;
   height: 100%;
-
-
-  //height: 100vh;
-  //background-color: #4F76A7;
-  //background-image: url(../img/hero-lg.jpg);
-  //background-repeat: no-repeat;
-  ////background-size: 100% 100%;
-  //background-size: cover;
-  //background-position: center;
-
-  //background-attachment: fixed;
-
 }
 
 button:active, button:focus {
@@ -36,30 +24,15 @@ button::-moz-focus-inner {
 
 
 .container {
-  //postion: fixed;
-  //z-index: -1;
-
+  overflow: auto;
   display: flex;
   width: 100%;
-
   height: 100%;
-  //height: 100vh;
   background-color: #4F76A7;
   background-image: url(../img/hero-lg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-
-  @media screen and (orientation:landscape) {
-    height: 100vh;
-    //background-size: 100% 100%;
-  }
-
-  //@media screen and (orientation: portrait){
-  //  height: auto;
-  //}
-
-
 }
 
 .signup {
@@ -79,6 +52,7 @@ button::-moz-focus-inner {
     }
 
     @media all and (max-width: 575px) {
+      font-size: 0;
       visibility: hidden;
     }
     
